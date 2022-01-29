@@ -1,34 +1,37 @@
-from impostos import ICMS, ISS
-
+# %%
 class Orcamento(object):
     def __init__(self, valor):
+        self.__itens = []
+
+    @property
+    def valor(self):
+        total = 0.0 
+        for item in self.__itens:
+            total += item.valor
+        return total 
+
+    def obter_itens(self):
+        return tuple(self.__itens)
+
+    @property
+    def total_itens(self):
+        return len(self.__itens)
+
+    def adiciona_item(self, item):
+        self.__itens.append(item)
+
+
+
+class Item(object):
+    def __init__(self, nome, valor):
+        self.__nome = nome 
         self.__valor = valor 
 
     @property
     def valor(self):
-        return self.__valor
-
-
-class Calculador_impostos(object):
-    def realiza_calculo(self, orcamento, imposto):
-        valor = imposto.calcula(orcamento)
-        print (valor)
-
-class Novo_Orcamento(Object):
-    def __init__(self):
-        self.__itens = [] 
-
+        return self.__valor 
 
     @property
-    def valor(self):
-        total = 0.0
-        for item in self.__itens:
-            total += item.valor
-
-
-
-orcamento01 = Orcamento(5000)
-imposto = Calculador_impostos()
-imposto.realiza_calculo(orcamento01, ICMS())
-
-
+    def nome(self):
+        return self.__nome
+# %%

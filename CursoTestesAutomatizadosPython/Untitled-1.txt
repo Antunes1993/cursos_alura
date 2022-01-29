@@ -1,0 +1,9 @@
+Attached the code as requested.
+
+Some information about him:
+
+I used the Python programming language.
+
+I tried to demonstrate some knowledge that I believe are important in everyday life, such as object orientation, class decoupling, design patterns and hashmaps to locate information with linear computational cost.
+
+At my github profile I have some personal projects that I believe also describe some personal interests such as computer vision.
