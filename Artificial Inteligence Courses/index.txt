@@ -1,1 +1,2 @@
 Curso 01 - NLP: aplicando processamento de linguagem natural para análise de sentimentos
+Curso 02 - NLP: buscando entidades nomeadas em documentos

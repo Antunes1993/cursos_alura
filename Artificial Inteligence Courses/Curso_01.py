@@ -6,7 +6,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 #%% Gathering Data
 #################################################################################################
-data = pd.read_csv('dataset_avaliacoes.csv')
+data = pd.read_csv('dados/dataset_avaliacoes.csv')
 data.head()
 data.value_counts('sentimento') #Binary classification (positive and negative)
 print(f"1°st Review: {data.iloc[0,1]}")
